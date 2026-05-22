@@ -612,7 +612,7 @@ function openGenreView(genreName) {
         // Pop contains Ariana Grande, Justin Bieber, and Sabrina Carpenter
         filteredGenreSongs = songs.filter(s => 
             s.artist === "Ariana Grande" || 
-            s.artist === "Justin Bieber" || 
+            s.artist === "Justine Bieber" || 
             s.artist === "Sabrina Carpenter"
         );
     } else if (genreName === "Country Side") {
