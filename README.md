@@ -51,7 +51,7 @@ Music-Player/
 
 
 ##🌟 How to Use------------
-Open index.html in a browser.
+Open this link in a browser: https://ksadeleon-lgtm.github.io/KTunes/ 
 Enjoy your music! 🎶
 Each album or playlist folder contains an file NAME, which provides details about the playlist.
 
@@ -96,6 +96,10 @@ Our website had one limitation and that is the Favorites and Home button view ha
 
 👥Target Users
 The target users of this web music player are students, working individuals, and casual music listeners who want a simple and easy to use platform for listening to music while studying, working, relaxing, or commuting. The application is designed for users who prefer quick access to playlists, smooth music playback, and a clean interface without unnecessary distractions and too much features.
+
+
+
+
 
 
  
