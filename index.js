@@ -5,7 +5,7 @@ const songs = [
         artist:"Ariana Grande",
         album:"Album 1",
         albumArt:"image/ar1.jpg",
-        audioSrc:"music/Ariana Grande/i wish i hated You.mp3"
+        audioSrc:"music/Ariana Grande/i wish i hated you.mp3"
     },
     {
         title:"Imperfect for you",
@@ -73,35 +73,35 @@ const songs = [
     },
     {
         title:"Common Denominator",
-        artist:"Justin Bieber",
+        artist:"Justine Bieber",
         album:"Album 3",
         albumArt:"image/jb1.jpg",
         audioSrc:"music/Justine Bieber/Common Denominator - iTunes Bonus.mp3"
     },
     {
         title:"Eenie Meenie",
-        artist:"Justin Bieber",
+        artist:"Justine Bieber",
         album:"Album 3",
         albumArt:"image/jb2.jpg",
         audioSrc:"music/Justine Bieber/Eenie Meenie.mp3"
     },
     {
         title:"Favorite Girl",
-        artist:"Justin Bieber",
+        artist:"Justine Bieber",
         album:"Album 3",
         albumArt:"image/jb3.jpg",
         audioSrc:"music/Justine Bieber/Favorite Girl (Live) - Acoustic Version.mp3"
     },
     {
         title:"Never say never",
-        artist:"Justin Bieber",
+        artist:"Justine Bieber",
         album:"Album 3",
         albumArt:"image/jb4.jpg",
         audioSrc:"music/Justine Bieber/Never Say Never - Acoustic Version.mp3"
     },
     {
         title:"One less lonely girl",
-        artist:"Justin Bieber",
+        artist:"Justine Bieber",
         album:"Album 3",
         albumArt:"image/jb5.jpg",
         audioSrc:"music/Justine Bieber/One Less Lonely Girl - Acoustic.mp3"
