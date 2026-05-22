@@ -61,6 +61,9 @@ The target users of this web music player are students, working individuals, and
 
 WIREFRAME/USERPERSONA/Answered Question:
 https://drive.google.com/file/d/1OLTcgaLKu4ty_n3btDljcUxewRodp5_F/view?usp=drive_link 
+https://drive.google.com/file/d/1ModojgBGyFKOH5eGx2GckM2R3NGJ3yaD/view?usp=drive_link 
+https://docs.google.com/document/d/1UpGAk3qfY9AXSJfZ9A0Q0JP8RyKp1w8EWwvbB5C_RxQ/edit?usp=drive_link
+
 
 
 
