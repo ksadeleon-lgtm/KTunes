@@ -35,13 +35,7 @@ const songs = [
         albumArt:"image/ar5.jpg",
         audioSrc:"music/Ariana Grande/we can't be friends (wait for your love).mp3"
     },
-    {
-        title:"Thank u, Next",
-        artist:"Ariana Grande",
-        album:"Album 1",
-        albumArt:"image/ar5.jpg",
-        audioSrc:"music/Ariana Grande/thank u, next.mp3"
-    },
+   
     {
         title:"Angel Number Ten Toes",
         artist:"Chris Brown",
@@ -82,35 +76,35 @@ const songs = [
         artist:"Justin Bieber",
         album:"Album 3",
         albumArt:"image/jb1.jpg",
-        audioSrc:"music/Justin Bieber/Common Denominator - iTunes Bonus.mp3"
+        audioSrc:"music/Justine Bieber/Common Denominator - iTunes Bonus.mp3"
     },
     {
         title:"Eenie Meenie",
         artist:"Justin Bieber",
         album:"Album 3",
         albumArt:"image/jb2.jpg",
-        audioSrc:"music/Justin Bieber/Eenie Meenie.mp3"
+        audioSrc:"music/Justine Bieber/Eenie Meenie.mp3"
     },
     {
         title:"Favorite Girl",
         artist:"Justin Bieber",
         album:"Album 3",
         albumArt:"image/jb3.jpg",
-        audioSrc:"music/Justin Bieber/Favorite Girl (Live) - Acoustic Version.mp3"
+        audioSrc:"music/Justine Bieber/Favorite Girl (Live) - Acoustic Version.mp3"
     },
     {
         title:"Never say never",
         artist:"Justin Bieber",
         album:"Album 3",
         albumArt:"image/jb4.jpg",
-        audioSrc:"music/Justin Bieber/Never Say Never - Acoustic Version.mp3"
+        audioSrc:"music/Justine Bieber/Never Say Never - Acoustic Version.mp3"
     },
     {
         title:"One less lonely girl",
         artist:"Justin Bieber",
         album:"Album 3",
         albumArt:"image/jb5.jpg",
-        audioSrc:"music/Justin Bieber/One Less Lonely Girl - Acoustic.mp3"
+        audioSrc:"music/Justine Bieber/One Less Lonely Girl - Acoustic.mp3"
     },
     {
         title:"Brooklyn Baby",
