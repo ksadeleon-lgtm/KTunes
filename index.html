@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<div class="logo"> KTunes </div>
+
+<!-- BUTTONS -->
+
+<div class="menu">
+
+<button class="album" id="albumBtn">Albums</button>
+
+<button class="explore" id="expBtn">Explore</button>
+
+<br>
+<br>
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="&#128269; What do you want to play?"
+>
+
+<div class="search-results" id="searchResults"></div>
+
+</div>
+
+<br>
+<br>
+
+<!-- HOME / PLAYLIST -->
+
+<button class="menu-item active-btn" id="homeBtn">Home</button>
+<br>
+<hr>
+<br>
+<button class="menu-item" id="playlistBtn">Favorites</button>
+
+
+
+<div class="favorites-section">
+
+            <div class="favorite-list" id="favorite-list"></div>
+        </div>
+</div>
+</div>
+</aside>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+
+
+
+<div class="main-content">
+
+
+  <div id="homeView" class="view">
+    <div class="topbar">
+      <h2>Popular Artist</h2>
+      <div class="artist-list">
+        <div class="artist-item" data-artist="Ariana Grande">
+          <img src="image/arpic.jpg" alt="Ariana Grande">
+          <p>Ariana Grande</p>
+        </div>
+        <div class="artist-item" data-artist="Chris Brown">
+          <img src="image/cb.jpg" alt="Chris Brown">
+          <p>Chris Brown</p>
+        </div>
+        <div class="artist-item" data-artist="Justin Bieber">
+          <img src="image/jb.jpg" alt="Justin Bieber">
+          <p>Justin Bieber</p>
+        </div>
+        <div class="artist-item" data-artist="Lana Del Rey">
+          <img src="image/ld.jpg" alt="Lana Del Rey">
+          <p>Lana Del Rey</p>
+        </div>
+        <div class="artist-item" data-artist="Sabrina Carpenter">
+          <img src="image/sb.jpg" alt="Sabrina Carpenter">
+          <p>Sabrina Carpenter</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="middlebar">
+      <h2 id="current-artist-title">All Songs</h2>
+      <div id="playlist" class="quick-picks"></div>
+    </div>
+
+
+    <div class="recently-played">
+      <h2>Recently Played</h2>
+      <div id="recentContainer"></div>
+    </div>
+  </div>
+<div id="albumsView" class="view" style="display: none;">
+  <div id="albumsGridScreen">
+    <div class="view-header">
+      <h2>Your Albums</h2>
+    </div>
+    <div class="albums-grid" id="albumsContainer">
+      </div>
+  </div>
+
+
+  <div id="albumDetailsScreen" style="display: none;">
+    <div class="view-header">
+      <button id="backToAlbumsBtn" style="background: transparent; color: white; border: 1px solid gray; padding: 5px 15px; border-radius: 20px; cursor: pointer; margin-bottom: 15px;">← Back to Albums</button>
+      <h2 id="albumDetailsTitle">Album Title</h2>
+      <p id="albumDetailsArtist" style="color: #aaa; margin-top: 5px;">Artist Name</p>
+    </div>
+    <div id="albumSongsContainer" class="quick-picks" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; max-height: 400px; overflow-y: auto;">
+      </div>
+  </div>
+</div>
+
+
+<div id="exploreView" class="view" style="display: none;">
+  <div id="exploreCategoriesScreen">
+    <div class="view-header">
+      <h2>Explore Categories</h2>
+    </div>
+    <div class="explore-grid">
+      <div class="category-card genre-pop" data-genre="Pop">
+        <h3>Pop</h3>
+      </div>
+      <div class="category-card genre-rnb" data-genre="R&B">
+        <h3>R&B</h3>
+      </div>
+      <div class="category-card genre-country" data-genre="Country Side">
+        <h3>Country Side</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="genreDetailsScreen" style="display: none;">
+    <div class="view-header">
+      <button id="backToExploreBtn" style="background: transparent; color: white; border: 1px solid gray; padding: 5px 15px; border-radius: 20px; cursor: pointer; margin-bottom: 15px;">← Back to Categories</button>
+      <h2 id="genreDetailsTitle">Genre</h2>
+    </div>
+    <div id="genreSongsContainer" class="quick-picks" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; max-height: 400px; overflow-y: auto;">
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- ================= MINI PLAYER ================= -->
+
+<div class="mini-player">
+
+  <!-- LEFT -->
+  <div class="mini-left">
+    <img id="miniCover" src="img/ar1.jpg" alt="">
+  </div>
+
+  <!-- CENTER (ALL STACKED PROPERLY) -->
+  <div class="mini-center">
+
+    <!-- TOP INFO -->
+    <div class="song-info">
+      <h4 id="miniTitle">No Song</h4>
+      <p id="miniArtist">Artist</p>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-container">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="progressBar" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <!-- CONTROLS (NOW PROPERLY BELOW PROGRESS) -->
+    <div class="controls">
+      <button id="prevBtn">⏮</button>
+      <button id="playPauseBtn">▶</button>
+      <button id="nextBtn">⏭</button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="mini-right">
+
+        <div class="mini-right">
+        <button id="favorite-btn" class="icon-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+
+    🔊
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+  </div>
+
+</div>
+
+<!-- ================= AUDIO PLAYER ================= -->
+
+<audio id="audioPlayer"></audio>
+
+<script src="index.js"></script>
+
+</body>
+</html>
