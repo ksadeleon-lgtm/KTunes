@@ -143,38 +143,38 @@ const songs = [
     },
     {
         title:"Go Go Juice",
-        artist:"Sabrina ",
+        artist:"Sabrina",
         album:"Album 5",
         albumArt:"image/sb1.jpg",
-        audioSrc:"music/Sabrina /Go Go Juice.mp3"
+        audioSrc:"music/Sabrina/Go Go Juice.mp3"
     },
     {
         title:"Goodbye",
-        artist:"Sabrina ",
+        artist:"Sabrina",
         album:"Album 5",
         albumArt:"image/sb2.jpg",
-        audioSrc:"music/Sabrina /Goodbye.mp3"
+        audioSrc:"music/Sabrina/Goodbye.mp3"
     },
     {
         title:"Manchild",
-        artist:"Sabrina ",
+        artist:"Sabrina",
         album:"Album 5",
         albumArt:"image/sb3.jpg",
-        audioSrc:"music/Sabrina /Manchild.mp3"
+        audioSrc:"music/Sabrina/Manchild.mp3"
     },
     {
         title:"Nobody's Son",
-        artist:"Sabrina ",
+        artist:"Sabrina",
         album:"Album 5",
         albumArt:"image/sb4.jpg",
-        audioSrc:"music/Sabrina /Nobody's Son.mp3"
+        audioSrc:"music/Sabrina/Nobody's Son.mp3"
     },
     {
         title:"We Almost Broke Up",
-        artist:"Sabrina ",
+        artist:"Sabrina",
         album:"Album 5",
         albumArt:"image/sb5.jpg",
-        audioSrc:"music/Sabrina /We Almost Broke Up Again Last Night.mp3"
+        audioSrc:"music/Sabrina/We Almost Broke Up Again Last Night.mp3"
     }
 ];
 
