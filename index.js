@@ -143,38 +143,38 @@ const songs = [
     },
     {
         title:"Go Go Juice",
-        artist:"Sabrina Carpenter",
+        artist:"Sabrina ",
         album:"Album 5",
         albumArt:"image/sb1.jpg",
-        audioSrc:"music/Sabrina Carpenter/Go Go Juice.mp3"
+        audioSrc:"music/Sabrina /Go Go Juice.mp3"
     },
     {
         title:"Goodbye",
-        artist:"Sabrina Carpenter",
+        artist:"Sabrina ",
         album:"Album 5",
         albumArt:"image/sb2.jpg",
-        audioSrc:"music/Sabrina Carpenter/Goodbye.mp3"
+        audioSrc:"music/Sabrina /Goodbye.mp3"
     },
     {
         title:"Manchild",
-        artist:"Sabrina Carpenter",
+        artist:"Sabrina ",
         album:"Album 5",
         albumArt:"image/sb3.jpg",
-        audioSrc:"music/Sabrina Carpenter/Manchild.mp3"
+        audioSrc:"music/Sabrina /Manchild.mp3"
     },
     {
         title:"Nobody's Son",
-        artist:"Sabrina Carpenter",
+        artist:"Sabrina ",
         album:"Album 5",
         albumArt:"image/sb4.jpg",
-        audioSrc:"music/Sabrina Carpenter/Nobody's Son.mp3"
+        audioSrc:"music/Sabrina /Nobody's Son.mp3"
     },
     {
         title:"We Almost Broke Up",
-        artist:"Sabrina Carpenter",
+        artist:"Sabrina ",
         album:"Album 5",
         albumArt:"image/sb5.jpg",
-        audioSrc:"music/Sabrina Carpenter/We Almost Broke Up Again Last Night.mp3"
+        audioSrc:"music/Sabrina /We Almost Broke Up Again Last Night.mp3"
     }
 ];
 
@@ -613,7 +613,7 @@ function openGenreView(genreName) {
         filteredGenreSongs = songs.filter(s => 
             s.artist === "Ariana Grande" || 
             s.artist === "Justine Bieber" || 
-            s.artist === "Sabrina Carpenter"
+            s.artist === "Sabrina"
         );
     } else if (genreName === "Country Side") {
         // Country Side contains Lana Del Rey
