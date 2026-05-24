@@ -133,7 +133,6 @@ hr{
    BODY & APP LAYOUT
 ================================= */
 body {
-    font-family: Arial, sans-serif;
     background: #1f1f1f;
     color: white;
     display: flex;
@@ -151,6 +150,8 @@ body {
     display: flex;
     height: 100vh;
     width: 400px;
+
+    align-items:start;
    
 }
 
@@ -158,6 +159,7 @@ body {
    sIDEBAR
 ================================= */
 .sidebar {
+    align-items: start;
     width: 260px;
     background: #1f1f1f;
     backdrop-filter: blur(12px);
@@ -352,6 +354,7 @@ background:#1f1f1f;
   border: 2px solid gray;
   height: 250px;
   margin-top: 3px;
+    align-items: start;
 }
 
 
@@ -411,6 +414,7 @@ transform:scale(1.05);
   border: 2px solid gray;
   height: 280px;
   overflow:hidden;
+    align-items:start;
 }
 
 
