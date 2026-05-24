@@ -682,6 +682,7 @@ font-size:16px;
     flex-direction: column;
     gap: 7px;
     width: 100%;
+    align-items:start;
 }
 
 /* Optional: Clean up button states in the sidebar */
@@ -705,9 +706,11 @@ font-size:16px;
     gap: 20px;
     padding: 0 20px 20px 20px;
     overflow-y: auto;
+    align-items: start;
     height: 100%; /* Adjust height based on layout constraints */
     width: 100%;
     scrollbar-width: none;
+    margin-left: 3px;
 }
 
 .albums-grid::-webkit-scrollbar {
@@ -724,6 +727,7 @@ font-size:16px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    align-items: Start;
 }
 
 .album-card:hover {
@@ -735,6 +739,7 @@ font-size:16px;
 
 
 .album-img-wrapper img {
+    align-iterms: start;
     width: 250px;          /* Adjust size here (e.g., 120px, 150px) */
     height: 250px;         /* Keep height equal to width for a perfect circle */
     aspect-ratio: 1 / 1;   /* Forces the image box to stay perfectly square */
